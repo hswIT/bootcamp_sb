@@ -1,0 +1,27 @@
+# pre-defined variables
+server:
+  port: 8082
+
+# pre-defined variables
+spring:
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://127.0.0.1:5432/sb_exercise2"
+    username: "postgres"
+    password: "88888888"
+    # driverClassName: "com.mysql.jdbc.Driver"
+    # url: "jdbc:mysql://127.0.0.1:3306/SB_EXERCISE_2"
+    # username: "root"
+    # password: "88888888"
+  jpa:
+    show-sql: true # this line shows the SQL executed in the terminal
+    hibernate.ddl-auto: create
+
+# Custom variables
+api:
+  jph:
+    domain: "jsonplaceholder.typicode.com"
+    endpoints:
+      users: "/users"
+      posts: "/posts"
+      comments: "/comments"
